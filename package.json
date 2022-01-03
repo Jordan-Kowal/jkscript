@@ -1,0 +1,32 @@
+{
+  "name": "jkscript",
+  "version": "1.0.0",
+  "description": "Personal library with ES6 JavaScript utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jordan-Kowal/jkscript.git"
+  },
+  "keywords": [
+    "es6",
+    "javascript",
+    "js",
+    "utilities"
+  ],
+  "author": "Jordan Kowal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jordan-Kowal/jkscript/issues"
+  },
+  "homepage": "https://github.com/Jordan-Kowal/jkscript#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
+}

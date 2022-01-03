@@ -1,2 +1,3 @@
 # jkscript
-Personal library with JS/React/Vue utilities
+
+Personal library with ES6 JavaScript utilities
