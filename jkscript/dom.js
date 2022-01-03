@@ -1,4 +1,4 @@
-import { wait } from "@/core/helpers/async";
+import { wait } from "./async";
 
 /**
  * Maybe converts a value to pixels

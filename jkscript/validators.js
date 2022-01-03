@@ -1,4 +1,4 @@
-export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /**
  * The value must be an valid email address
@@ -7,9 +7,8 @@ export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
  */
 export function emailValidator(value) {
   value = value || "";
-  return emailRegex.test(value) || "Please provide a valid email address";
+  return EMAIL_REGEX.test(value) || "Please provide a valid email address";
 }
-
 
 /**
  * The value cannot exceed N characters
