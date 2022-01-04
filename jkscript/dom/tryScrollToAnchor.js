@@ -1,24 +1,4 @@
-import { wait } from "./async";
-
-/**
- * Maybe converts a value to pixels
- * @param {String|Number} value
- * @return {String}
- */
-export function maybeNumberToPx(value) {
-  if (typeof value === "number") {
-    value = `${value}px`;
-  } else if (typeof value === "string") {
-    if (
-      !value.endsWith("px") &&
-      !value.endsWith("%") &&
-      !value.endsWith("rem")
-    ) {
-      value = `${value}px`;
-    }
-  }
-  return value;
-}
+import { wait } from "../async";
 
 /**
  * Scrolls to the anchor once it is rendered
@@ -28,7 +8,11 @@ export function maybeNumberToPx(value) {
  * @param {Number} delay Delay between each try
  * @return {Promise<void>}
  */
-export async function tryScrollToAnchor(hash, timeout = 1000, delay = 100) {
+export default async function tryScrollToAnchor(
+  hash,
+  timeout = 1000,
+  delay = 100
+) {
   while (timeout > 0) {
     const el = document.querySelector(hash);
     if (el) {

@@ -1,5 +1,5 @@
 /** Debouncer for a function, meaning each call reset the timeout before it runs */
-export class DebouncedFunction {
+export default class DebouncedFunction {
   /**
    * Creates the debounced function call
    * @param {Function} func The function that will be run after the delay
@@ -38,26 +38,4 @@ export class DebouncedFunction {
       this.timeout = undefined;
     }
   }
-}
-
-/** Throttler for a function, meaning it can be called only once until the timeout is reached */
-export class ThrottledFunction extends DebouncedFunction {
-  /** Only starts the timeout if it does not already exists */
-  run() {
-    if (this.timeout) return;
-    this.timeout = setTimeout(() => {
-      this.result = this.func();
-      this.timeout = undefined;
-    }, this.delay);
-  }
-}
-
-/**
- * `await` this function to sleep for {duration} milliseconds
- * @param {Number} duration Wait time in milliseconds
- * @returns {Promise}
- * @constructor
- */
-export function wait(duration) {
-  return new Promise((resolve) => setTimeout(resolve, duration));
 }
