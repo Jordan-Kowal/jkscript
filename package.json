@@ -1,6 +1,6 @@
 {
   "name": "jkscript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal library with ES6 JavaScript utilities",
   "main": "index.js",
   "scripts": {
