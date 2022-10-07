@@ -1,8 +1,12 @@
 # jkscript
 
 Personal library with ES6 JavaScript utilities
-- `arrays`: Various functions for array manipulation
+- `api`: API tools like endpoint base class and custom fetch
+- `array`: Array utilities and manipulations
 - `async`: Debouncing, throttling, and other async or time-related utilities
-- `colors`: Color and css management
+- `date`: Date manager and formatter (with dayjs)
 - `dom`: DOM interactions
-- `validators`: Common form validation
+- `image`: Image management
+- `object`: Object utilities and manipulations
+- `string`: String utilities and manipulations
+- `web`: Web related tools (cookies, urls, etc.)
