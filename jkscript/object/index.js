@@ -1,3 +1,4 @@
+export { default as deepCopy } from './deepCopy';
 export { default as flattenObject } from './flattenObject';
 export { default as getObjectSubValue } from './getObjectSubValue';
 export { default as isFunction } from './isFunction';

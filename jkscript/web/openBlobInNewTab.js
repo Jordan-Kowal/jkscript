@@ -1,4 +1,4 @@
-function openBlobInNewTab(blob, fileName, type) {
+const openBlobInNewTab = (blob, fileName, type) => {
   if (window.navigator && window.navigator.msSaveOrOpenBlob) {
     window.navigator.msSaveOrOpenBlob(blob, fileName);
   } else {
@@ -6,6 +6,6 @@ function openBlobInNewTab(blob, fileName, type) {
     const objectUrl = URL.createObjectURL(file);
     window.open(objectUrl);
   }
-}
+};
 
 export default openBlobInNewTab;
