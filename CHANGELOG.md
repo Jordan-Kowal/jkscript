@@ -7,6 +7,7 @@ N/A
 - Removed `dom`, `api`, and `date`
 - Added new functions to web
 - Updated some functions to arrow functions
+- Can now import directly from jkscript
 
 ## [2.0.0] - 2022-10-08
 Major revamp with a new structure:
