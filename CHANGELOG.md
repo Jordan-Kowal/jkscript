@@ -3,11 +3,15 @@
 ## [?.?.?] - ???
 N/A
 
+## [2.1.1] - 2023-01-03
+- Remove unnecessary layer of imports
+- Can now import directly from jkscript (without subfolder)
+
+
 ## [2.1.0] - 2023-01-03
 - Removed `dom`, `api`, and `date`
 - Added new functions to web
 - Updated some functions to arrow functions
-- Can now import directly from jkscript
 
 ## [2.0.0] - 2022-10-08
 Major revamp with a new structure:
