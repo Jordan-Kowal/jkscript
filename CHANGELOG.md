@@ -4,7 +4,7 @@
 N/A
 
 ## [2.1.2] - 2023-01-04
-- Build module before publishing
+- Update publishing to first build the package
 
 ## [2.1.1] - 2023-01-03
 - Remove unnecessary layer of imports
