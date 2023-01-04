@@ -3,7 +3,7 @@
 ## [?.?.?] - ???
 N/A
 
-## [2.1.2] - 2023-01-04
+## [2.1.3] - 2023-01-04
 - Update publishing to first build the package
 
 ## [2.1.1] - 2023-01-03
