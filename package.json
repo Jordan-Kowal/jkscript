@@ -2,7 +2,10 @@
   "name": "jkscript",
   "version": "2.1.2",
   "description": "Personal library with ES6 JavaScript utilities",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "babel src -d dist",
     "test": "jest --env=node"
