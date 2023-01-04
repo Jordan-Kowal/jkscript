@@ -3,6 +3,9 @@
 ## [?.?.?] - ???
 N/A
 
+## [2.1.2] - 2023-01-04
+- Build module before publishing
+
 ## [2.1.1] - 2023-01-03
 - Remove unnecessary layer of imports
 - Can now import directly from jkscript (without subfolder)
