@@ -3,6 +3,10 @@
 ## [?.?.?] - ???
 N/A
 
+## [2.1.4] - 2023-01-04
+- Explicitly export all functions in the main index.js
+- Added files in the built package
+
 ## [2.1.3] - 2023-01-04
 - Update publishing to first build the package
 
