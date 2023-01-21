@@ -1,7 +1,9 @@
 # Changelog
 
-## [?.?.?] - ???
-N/A
+## [2.1.5] - ???
+- Added `getRandomInt` in the `maths` folder
+- Updated `deepCopy` to be an actual deep copy that does not break dates
+- Added `dayjs` as dependency
 
 ## [2.1.4] - 2023-01-04
 - Explicitly export all functions in the main index.js

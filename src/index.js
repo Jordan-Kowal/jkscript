@@ -15,6 +15,7 @@ export {
   objectToSearchQuery,
   isFunction,
 } from './object';
+export { getRandomInt } from './maths';
 export { toCamel, camelToSnakeCase } from './string';
 export {
   getCookie,
