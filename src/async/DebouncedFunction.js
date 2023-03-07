@@ -1,11 +1,4 @@
-/** Debouncer for a function, meaning each call reset the timeout before it runs */
 export default class DebouncedFunction {
-  /**
-   * Creates the debounced function call
-   * @param {Function} func The function that will be run after the delay
-   * @param {Number} delay The timeout delay for the function call
-   * @param {Boolean} startNow Whether we start the first call on creation
-   */
   constructor(func, delay, startNow = false) {
     this.func = func;
     this.delay = delay;
@@ -16,7 +9,6 @@ export default class DebouncedFunction {
     }
   }
 
-  /** Clears the existing timeout and starts a new one */
   run() {
     this.cancel();
     this.timeout = setTimeout(() => {
@@ -25,13 +17,11 @@ export default class DebouncedFunction {
     }, this.delay);
   }
 
-  /** Clears the existing timeout and instantly executes the function */
   now() {
     this.cancel();
     this.result = this.func();
   }
 
-  /** Clears the existing timeout */
   cancel() {
     if (this.timeout) {
       clearTimeout(this.timeout);

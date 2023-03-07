@@ -1,15 +1,8 @@
-import { toSnakeCase, toCamelCase } from '../../string';
-import isObject from '../isObject';
+import { isObject } from '../checks';
+import toCamelCase from './toCamelCase';
+import toSnakeCase from './toSnakeCase';
 
-export function keysToCamel(obj) {
-  return recursiveKeysTransformation(obj, toCamelCase);
-}
-
-export function keysToSnake(obj) {
-  return recursiveKeysTransformation(obj, toSnakeCase);
-}
-
-function recursiveKeysTransformation(obj, transformFunc) {
+export const recursiveKeysTransformation = (obj, transformFunc) => {
   if (isObject(obj)) {
     const n = {};
     Object.keys(obj).forEach((key) => {
@@ -23,6 +16,11 @@ function recursiveKeysTransformation(obj, transformFunc) {
   if (Array.isArray(obj)) {
     return obj.map((item) => recursiveKeysTransformation(item, transformFunc));
   }
-
   return obj;
-}
+};
+
+export const keysToCamel = (obj) =>
+  recursiveKeysTransformation(obj, toCamelCase);
+
+export const keysToSnake = (obj) =>
+  recursiveKeysTransformation(obj, toSnakeCase);

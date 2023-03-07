@@ -1,8 +1,8 @@
 /* eslint-disable camelcase */
-import { keysToSnake, keysToCamel } from './recursiveKeysTransformation';
+import { keysToCamel, keysToSnake } from './recursiveKeysTransformation';
 
-describe('utils/keysToSnake', () => {
-  test('transform keys from object from camelCase to sanke_Case', () => {
+describe('transform/keysToSnake', () => {
+  test('Should transform keys from object from camelCase to snake_Case', () => {
     const camel = {
       iAmACamel: 'he is',
     };
@@ -10,7 +10,7 @@ describe('utils/keysToSnake', () => {
       i_am_a_camel: 'he is',
     });
   });
-  test('deep transform keys from object to snake_case', () => {
+  test('Should deep transform keys from object to snake_case', () => {
     const camelChili = {
       bestChili: {
         chiliIngredients: [
@@ -68,9 +68,8 @@ describe('utils/keysToSnake', () => {
   });
 });
 
-
-describe('utils/keysToCamel', () => {
-  test('transform keys from object from camel_case to camelCase', () => {
+describe('transform/keysToCamel', () => {
+  test('Should transform keys from object from camel_case to camelCase', () => {
     const snake = {
       i_am_a_snake: 'he is',
     };
@@ -78,7 +77,7 @@ describe('utils/keysToCamel', () => {
       iAmASnake: 'he is',
     });
   });
-  test('transform keys from object from kebab-case to camelCase', () => {
+  test('Should transform keys from object from kebab-case to camelCase', () => {
     const kebab = {
       'i-am-a-kebab': 'he is',
     };
@@ -86,7 +85,7 @@ describe('utils/keysToCamel', () => {
       iAmAKebab: 'he is',
     });
   });
-  test('depp transform keys from object to camelCase', () => {
+  test('Should deep transform keys from object to camelCase', () => {
     const snake_chili = {
       best_chili: {
         chili_ingredients: [

@@ -1,7 +1,7 @@
 import flattenObject from './flattenObject';
 
-describe('utils/object/flattenObject', () => {
-  test('Test flattenObject', () => {
+describe('transform/flattenObject', () => {
+  test('Should correctly flatten the object', () => {
     const initialObject = {
       intField: 1,
       stringField: 'hello',

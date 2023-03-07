@@ -4,24 +4,27 @@ extends:
   - plugin:jsx-a11y/recommended
   - prettier
 rules:
-  no-plusplus: [2, { allowForLoopAfterthoughts: true }]
-  camelcase: ['error', { ignoreDestructuring: true }]
-  no-use-before-define: ['error', { functions: false, classes: false }]
   arrow-body-style: ['error', 'as-needed']
-  jsx-a11y/label-has-associated-control: [2, { depth: 3 }]
-  react/jsx-filename-extension: [1, { extensions: ['.js'] }]
-  react/jsx-one-expression-per-line: 0
-  react/jsx-curly-newline: 0
-  react/require-default-props: ['error', { ignoreFunctionalComponents: true }]
-  react/jsx-props-no-spreading: 2
-  import/no-unresolved: 0
-  react-hooks/exhaustive-deps: ['warn', { 'additionalHooks': '(useWebSocket)' }]
-  react/function-component-definition: 0
+  camelcase: ['error', { ignoreDestructuring: true }]
   default-param-last: 0
-  react/no-unstable-nested-components: 1
+  no-plusplus: [2, { allowForLoopAfterthoughts: true }]
+  no-use-before-define: ['error', { functions: false, classes: false }]
+  no-restricted-exports: 0
   prefer-promise-reject-errors: 0
+  import/extensions: 0
+  import/prefer-default-export: 0
+  import/no-unresolved: 0
   jsx-a11y/click-events-have-key-events: 0
+  jsx-a11y/label-has-associated-control: [2, { depth: 3 }]
   jsx-a11y/no-static-element-interactions: 0
+  react/function-component-definition: 0
+  react/jsx-curly-newline: 0
+  react/jsx-filename-extension: [1, { extensions: ['.js', '.jsx'] }]
+  react/jsx-one-expression-per-line: 0
+  react/jsx-props-no-spreading: 0
+  react/no-unstable-nested-components: 1
+  react/require-default-props: ['error', { ignoreFunctionalComponents: true }]
+  react-hooks/exhaustive-deps: ['warn', { 'additionalHooks': '(useWebSocket)' }]
 
 overrides:
   - files:
@@ -33,14 +36,11 @@ overrides:
       - '**/*.test.js'
       - '**/*.spec.js'
       - '**/__tests__/*.js'
-    rules:
-      react/jsx-props-no-spreading: 0
     settings:
       disable/plugins: ['jsx-a11y']
   - files:
       - '**/*.stories.js'
       - '**/*story.js'
     rules:
-      react/jsx-props-no-spreading: 0
       react/prop-types: 0
       no-alert: 0

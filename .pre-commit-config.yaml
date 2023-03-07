@@ -1,0 +1,26 @@
+default_language_version:
+  node: system
+
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v2.7.1'
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@2.7.1
+          - '@trivago/prettier-plugin-sort-imports@4.1.0'
+        exclude: '(html)|(md)|(txt)$'
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: 'v8.34.0'
+    hooks:
+      - id: eslint
+        additional_dependencies:
+          - eslint@8.31.0
+          - eslint-config-airbnb@19.0.4
+          - eslint-config-prettier@8.6.0
+          - eslint-plugin-disable@2.0.3
+          - eslint-plugin-flowtype@8.0.3
+          - eslint-plugin-import@2.26.0
+        files: \.(js|jsx|ts|tsx)$
+        types: [file]

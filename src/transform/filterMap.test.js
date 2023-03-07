@@ -1,26 +1,24 @@
-import filterMap from "./filterMap";
+import filterMap from './filterMap';
 
-describe("array/filterMap", () => {
-  const testArray = [1, "two", 3, "four", "five"];
+describe('transform/filterMap', () => {
+  const testArray = [1, 'two', 3, 'four', 'five'];
 
-  test("No function", () => {
-    const identicalArray = filterMap([...testArray], (value) => {
-      return [true, value];
-    });
+  test('Should crash if no callback function', () => {
+    const identicalArray = filterMap([...testArray], (value) => [true, value]);
     expect(identicalArray).toEqual(testArray);
   });
 
-  test("Normal behavior", () => {
+  test('Should correctly filter and map an array', () => {
     const filteredArray = filterMap([...testArray], (value, index) => {
       if (index % 2) {
         return [true, value];
       }
       return false;
     });
-    expect(filteredArray).toEqual(["two", "four"]);
+    expect(filteredArray).toEqual(['two', 'four']);
   });
 
-  test("Invalid return", () => {
+  test('Should crash if the callback fn signature is invalid', () => {
     expect(() => filterMap([...testArray], () => {})).toThrow();
   });
 });

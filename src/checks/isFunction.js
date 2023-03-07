@@ -1,4 +1,3 @@
-function isFunction(functionToCheck) {
-  return !!functionToCheck && typeof functionToCheck === 'function';
-}
+const isFunction = (functionToCheck) =>
+  !!functionToCheck && typeof functionToCheck === 'function';
 export default isFunction;

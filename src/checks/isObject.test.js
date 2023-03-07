@@ -1,17 +1,17 @@
 import isObject from './isObject';
 
-describe('utils/isObject', () => {
-  test('return true for {}', () => {
+describe('checks/isObject', () => {
+  test('Should return true for {}', () => {
     expect(isObject({})).toBe(true);
   });
-  test('return true for {} with properties', () => {
+  test('Should return true for {} with properties', () => {
     const testObject = {
       some: 'property',
-      and: 'anoter one',
+      and: 'another one',
     };
     expect(isObject(testObject)).toBe(true);
   });
-  test('return false for weird javascript "objects"', () => {
+  test('Should return false for weird javascript "objects"', () => {
     expect(isObject([])).toBe(false);
     expect(isObject(null)).toBe(false);
     expect(isObject(() => {})).toBe(false);

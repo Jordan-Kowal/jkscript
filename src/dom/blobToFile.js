@@ -1,3 +1,3 @@
-const blobToFile = (blob, fileName) => new File([blob], 'name');
+const blobToFile = (blob, fileName) => new File([blob], fileName);
 
 export default blobToFile;

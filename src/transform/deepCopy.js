@@ -9,6 +9,12 @@ const cloneSet = (obj) => {
   return newSet;
 };
 
+const cloneMap = (obj) => {
+  const newMap = new Map();
+  obj.forEach((value, key) => newMap.set(key, deepCopy(value)));
+  return newMap;
+};
+
 const cloneArrayOrObject = (obj) => {
   const newObject = Array.isArray(obj) ? [] : {};
   for (const key in obj) {
@@ -24,6 +30,7 @@ function deepCopy(obj) {
   }
   if (obj instanceof dayjs) return cloneDayjsObject(obj);
   if (obj instanceof Set) return cloneSet(obj);
+  if (obj instanceof Map) return cloneMap(obj);
   return cloneArrayOrObject(obj);
 }
 

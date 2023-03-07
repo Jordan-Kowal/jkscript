@@ -1,30 +1,26 @@
-export { filterMap, getNextElement, isEmptyArray, toHashMap } from './array';
-export { DebouncedFunction, ThrottledFunction, wait } from './async';
-export { blobToBase64 } from './image';
+export { DebouncedFunction, ThrottledFunction, sleep } from './async';
 export {
-  keysToCamel,
-  keysToSnake,
-  isMissingOrEmptyObject,
-  isMissing,
-  isObject,
-  deepCopy,
-  flattenObject,
-  isEmptyObject,
-  getObjectSubValue,
-  objectToFlatFormData,
-  objectToSearchQuery,
   isFunction,
-} from './object';
-export { getRandomInt } from './maths';
-export { toCamelCase, toSnakeCase } from './string';
+  isMissingOrEmptyObject,
+  isObject,
+  setsAreEqual,
+} from './checks';
+export { getCookie, setCookie } from './cookies';
 export {
-  getCookie,
-  setCookie,
-  findNode,
+  blobToBase64,
+  blobToFile,
   canvasToBlob,
-  downloadFile,
-  getParamsFromUrl,
+  findNode,
   openBlobInNewTab,
   scrollIntoView,
   tryScrollToAnchor,
-} from './web';
+} from './dom';
+export { getRandomInt, round } from './maths';
+export {
+  deepCopy,
+  filterMap,
+  flattenObject,
+  objectToFlatFormData,
+  toCamelCase,
+  toSnakeCase,
+} from './transform';

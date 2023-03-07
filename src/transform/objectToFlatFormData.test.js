@@ -1,7 +1,7 @@
 import objectToFlatFormData from './objectToFlatFormData';
 
-describe('utils/web/objectToFlatFormData', () => {
-  test('Test objectToFlatFormData', () => {
+describe('transform/objectToFlatFormData', () => {
+  test('Should correctly turn an object into a flat form-data object', () => {
     const initialObject = {
       intField: 1,
       stringField: 'hello',

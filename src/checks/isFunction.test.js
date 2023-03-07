@@ -1,7 +1,7 @@
 import isFunction from './isFunction';
 
-describe('utils/isFunction', () => {
-  test('return true for functions', () => {
+describe('checks/isFunction', () => {
+  test('Should return true for functions', () => {
     const testCases = [
       () => {},
       function testFunc() {},
@@ -14,7 +14,7 @@ describe('utils/isFunction', () => {
     });
   });
 
-  test('return false for non function', () => {
+  test('Should return false for non-function objects', () => {
     const testCases = [[], null, undefined, {}, '', /abc/];
     testCases.forEach((test) => {
       expect(isFunction(test)).toBe(false);

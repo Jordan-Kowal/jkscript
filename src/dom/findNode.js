@@ -1,4 +1,5 @@
-import wait from '../async/wait';
+/* eslint-disable no-await-in-loop */
+import { sleep } from '../async';
 
 const SLEEP_TIME_MS = 50;
 
@@ -8,8 +9,7 @@ const findNode = async (cssSelector, timeoutMs = 5000) => {
   for (let i = 0, l = loops; i < l; i++) {
     node = document.querySelector(cssSelector);
     if (node) return node;
-    // eslint-disable-next-line no-await-in-loop
-    await wait(SLEEP_TIME_MS);
+    await sleep(SLEEP_TIME_MS);
   }
   return node;
 };

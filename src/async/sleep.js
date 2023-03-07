@@ -1,9 +1,7 @@
-/**
- * `await` this function to wait {duration} milliseconds
- * @param {Number} duration Wait time in milliseconds
- * @returns {Promise}
- * @constructor
- */
-export default function sleep(duration) {
-  return new Promise((resolve) => setTimeout(resolve, duration));
-}
+/* eslint-disable no-promise-executor-return */
+
+/** Await this function to sleep for a given duration. */
+const sleep = (durationMs) =>
+  new Promise((resolve) => setTimeout(resolve, durationMs));
+
+export default sleep;

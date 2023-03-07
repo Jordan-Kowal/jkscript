@@ -3,12 +3,9 @@
  * The `callbackFn` must return either:
  *    false: to discard the element
  *    [true, newValue]: to keep and update the value
- * @param {Array} arr
- * @param {Function} callbackFn
- * @return {Array}
  */
-export default function filterMap(arr, callbackFn) {
-  return arr.reduce((acc, value, index, array) => {
+const filterMap = (arr, callbackFn) =>
+  arr.reduce((acc, value, index, array) => {
     const result = callbackFn(value, index, array);
     if (result === false) return acc;
     if (Array.isArray(result) && result.length === 2 && result[0] === true) {
@@ -16,6 +13,7 @@ export default function filterMap(arr, callbackFn) {
       acc.push(newValue);
       return acc;
     }
-    throw Error("callbackFn must return `false` or `[true, newValue]`");
+    throw Error('callbackFn must return `false` or `[true, newValue]`');
   }, []);
-}
+
+export default filterMap;

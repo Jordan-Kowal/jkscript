@@ -1,11 +1,12 @@
-import isObject from '../isObject';
+/* eslint-disable no-param-reassign */
+import { isObject } from '../checks';
 
 const recursivelySetFlatData = (flatData, currentPath, value) => {
   // We skip undefined value because formData will stringify it as 'undefined'
   if (value === undefined) return;
   // File: Set value
   if (value instanceof File) {
-    flatData[currentPath] = value; // eslint-disable-line no-param-reassign
+    flatData[currentPath] = value;
     return;
   }
   // Array: Add index to path for each value and recurse
@@ -23,7 +24,7 @@ const recursivelySetFlatData = (flatData, currentPath, value) => {
     return;
   }
   // All other cases: Set value
-  flatData[currentPath] = value; // eslint-disable-line no-param-reassign
+  flatData[currentPath] = value;
 };
 
 const flattenObject = (data) => {
