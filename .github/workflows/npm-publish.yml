@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: 16.13.0
           registry-url: https://registry.npmjs.org/
-      - run: npm ci --production
-      - run: npm run build
-      - run: npm publish
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
