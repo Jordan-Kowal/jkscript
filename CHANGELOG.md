@@ -1,29 +1,38 @@
 # Changelog
 
-## [2.1.5] - ???
-- Added `getRandomInt` in the `maths` folder
-- Updated `deepCopy` to be an actual deep copy that does not break dates
-- Added `dayjs` as dependency
+## [3.0.0] - 2023-03-08
+
+- Major revamp with a new structure:
+  - Functions are now split between: `async`, `checks`, `cookies`, `dom`, `maths`, and `transforms`
+  - Most functions are now arrow functions
+  - Added tests for most functions
+- Added new functions
+- Removed unused functions
 
 ## [2.1.4] - 2023-01-04
+
 - Explicitly export all functions in the main index.js
 - Added files in the built package
 
 ## [2.1.3] - 2023-01-04
+
 - Update publishing to first build the package
 
 ## [2.1.1] - 2023-01-03
+
 - Remove unnecessary layer of imports
 - Can now import directly from jkscript (without subfolder)
 
-
 ## [2.1.0] - 2023-01-03
+
 - Removed `dom`, `api`, and `date`
 - Added new functions to web
 - Updated some functions to arrow functions
 
 ## [2.0.0] - 2022-10-08
+
 Major revamp with a new structure:
+
 - `api`: API tools like endpoint base class and custom fetch
 - `array`: Array utilities and manipulations
 - `async`: Debouncing, throttling, and other async or time-related utilities
@@ -34,19 +43,20 @@ Major revamp with a new structure:
 - `string`: String utilities and manipulations
 - `web`: Web related tools (cookies, urls, etc.)
 
-
 ## [1.0.1] - 2022-01-04
+
 - Changed:
   - Split all functions into individual files (but no impact on imports)
   - Added tests to most functions
 
 ## [1.0.0] - 2022-01-04
+
 - Added:
   - [arrays] Added `filterMap` and `toHashMap` for arrays
   - [async] Added `DebouncedFunction` and `ThrottledFunction` as well as a `wait` helper
   - [colors] Added `extractRBGFromHex` and `hexToRGB` converters
   - [dom] Added the `maybeNumberToPx` converter and the `tryScrollToAnchor` action
-  - [validators] Added the following validators: 
+  - [validators] Added the following validators:
     - `emailValidator`
     - `maxLengthValidator`
     - `minLengthValidator`
