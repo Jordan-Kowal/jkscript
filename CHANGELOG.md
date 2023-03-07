@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.0.1] - 2023-03-08
+
+- Fixed missing functions: `keysToSnake`, `keysToCamel`, `recursiveKeysTransformation`
+
 ## [3.0.0] - 2023-03-08
 
 - Major revamp with a new structure:
