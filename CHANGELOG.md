@@ -1,5 +1,9 @@
 # Changelog
 
+## [?] - TBD
+
+- Improved `pre-commit` config
+
 ## [3.0.1] - 2023-03-08
 
 - Fixed missing functions: `keysToSnake`, `keysToCamel`, `recursiveKeysTransformation`

@@ -6,6 +6,7 @@ repos:
     rev: 'v2.7.1'
     hooks:
       - id: prettier
+        args: [--config, ./.prettierrc.yml, --ignore-path, ./.prettierignore]
         additional_dependencies:
           - prettier@2.7.1
           - '@trivago/prettier-plugin-sort-imports@4.1.0'
@@ -15,6 +16,7 @@ repos:
     rev: 'v8.34.0'
     hooks:
       - id: eslint
+        args: [--config, ./.eslintrc.yml, --max-warnings=0]
         additional_dependencies:
           - eslint@8.31.0
           - eslint-config-airbnb@19.0.4
