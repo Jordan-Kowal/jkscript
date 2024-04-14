@@ -9,6 +9,7 @@ Personal library with ES6 JavaScript utilities
 - `cookies`: Cookie management
 - `dom`: DOM interactions
 - `maths`: Math utilities
+- `requests`: Utilities for performing HTTP requests
 - `transforms`: String and object transformations
 
 ## Pre-commit hooks

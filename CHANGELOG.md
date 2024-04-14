@@ -1,7 +1,8 @@
 # Changelog
 
-## [?] - TBD
+## [3.1.0] - 2024-04-14
 
+- Added `requests` folder with utilities for performing HTTP requests
 - Improved `pre-commit` config
 
 ## [3.0.1] - 2023-03-08
