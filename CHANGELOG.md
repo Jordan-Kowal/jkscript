@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.1.1] - 2024-04-14
+
+- Fixed `requests` functions not accessible from the main index
+
 ## [3.1.0] - 2024-04-14
 
 - Added `requests` folder with utilities for performing HTTP requests

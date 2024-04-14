@@ -16,6 +16,7 @@ export {
   tryScrollToAnchor,
 } from './dom';
 export { getRandomInt, round } from './maths';
+export { setParam, appendListParams, setBoolParam } from './requests';
 export {
   deepCopy,
   filterMap,
