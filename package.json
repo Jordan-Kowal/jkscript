@@ -1,6 +1,6 @@
 {
   "name": "jkscript",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "author": "Jordan Kowal",
   "license": "MIT",
   "homepage": "https://github.com/Jordan-Kowal/jkscript#readme",
@@ -12,7 +12,7 @@
     "url": "https://github.com/Jordan-Kowal/jkscript/issues"
   },
   "description": "Personal library with ES6 JavaScript utilities",
-  "keywords": ["es6", "javascript", "js", "utilities"],
+  "keywords": ["es6", "typescript", "ts", "utilities"],
   "main": "dist/index.js",
   "files": ["dist/", "CHANGELOG.md", "LICENSE.md", "README.md"],
   "scripts": {
