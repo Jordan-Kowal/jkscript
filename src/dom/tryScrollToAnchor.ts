@@ -1,6 +1,6 @@
-import { sleep } from "../async";
+import { sleep } from "@/async";
 
-const tryScrollToAnchor = async (hash, timeout = 1000, delay = 100) => {
+const tryScrollToAnchor = async (hash: string, timeout = 1000, delay = 100) => {
   let remainingTime = timeout;
   while (remainingTime > 0) {
     const el = document.querySelector(hash);
