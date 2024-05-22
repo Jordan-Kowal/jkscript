@@ -49,6 +49,24 @@ jobs:
       - name: Run biome
         run: yarn biome:check
 
+  tsc:
+    needs: setup
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.yarn
+            ./node_modules
+          key: yarn-${{ hashFiles('./frontend/yarn.lock') }}
+
+      - name: Run tsc
+        run: yarn tsc
+
   tests:
     needs: setup
     runs-on: ubuntu-latest
