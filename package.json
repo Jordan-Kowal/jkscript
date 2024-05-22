@@ -12,9 +12,19 @@
     "url": "https://github.com/Jordan-Kowal/jkscript/issues"
   },
   "description": "Personal library with ES6 JavaScript utilities",
-  "keywords": ["es6", "javascript", "js", "utilities"],
+  "keywords": [
+    "es6",
+    "javascript",
+    "js",
+    "utilities"
+  ],
   "main": "dist/index.js",
-  "files": ["dist/", "CHANGELOG.md", "LICENSE.md", "README.md"],
+  "files": [
+    "dist/",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md"
+  ],
   "scripts": {
     "biome:format": "biome format ./src",
     "biome:lint": "biome lint ./src",
@@ -25,18 +35,21 @@
     "test": "jest"
   },
   "dependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.7",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/runtime": "^7.16.7",
-    "dayjs": "^1.11.7"
+    "@babel/cli": "7.24.5",
+    "@babel/core": "7.24.5",
+    "@babel/preset-env": "7.24.5",
+    "@babel/runtime": "7.24.5",
+    "dayjs": "1.11.11"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/user-event": "^13.5.0",
-    "circular-dependency-plugin": "^5.2.2",
-    "jest": "^29.3.1",
-    "jest-environment-jsdom": "^29.3.1"
+    "@biomejs/biome": "1.7.3",
+    "@testing-library/jest-dom": "6.4.5",
+    "@testing-library/user-event": "14.5.2",
+    "@types/jest": "^29.5.12",
+    "circular-dependency-plugin": "5.2.2",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
   }
 }

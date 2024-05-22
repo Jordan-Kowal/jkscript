@@ -1,5 +1,10 @@
 export default class DebouncedFunction {
-  constructor(func, delay, startNow = false) {
+  func: CallableFunction;
+  delay: number;
+  // biome-ignore lint/suspicious/noExplicitAny: can truly be any
+  result: any;
+  timeout: NodeJS.Timeout | undefined;
+  constructor(func: CallableFunction, delay: number, startNow = false) {
     this.func = func;
     this.delay = delay;
     this.result = undefined;
