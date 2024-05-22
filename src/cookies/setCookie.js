@@ -1,5 +1,5 @@
 const setCookie = ({ name, value, expirationDays }) => {
-  let expires = '';
+  let expires = "";
   if (expirationDays) {
     const date = new Date();
     date.setTime(date.getTime() + expirationDays * 24 * 60 * 60 * 1000);

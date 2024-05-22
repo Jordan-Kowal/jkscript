@@ -1,5 +1,5 @@
-import flattenObject from './flattenObject';
-import toSnakeCase from './toSnakeCase';
+import flattenObject from "./flattenObject";
+import toSnakeCase from "./toSnakeCase";
 
 const objectToFlatFormData = (data, toSnake = true) => {
   const flatData = flattenObject(data);

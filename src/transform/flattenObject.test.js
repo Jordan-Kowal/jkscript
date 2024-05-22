@@ -1,12 +1,12 @@
-import flattenObject from './flattenObject';
+import flattenObject from "./flattenObject";
 
-describe('transform/flattenObject', () => {
-  test('Should correctly flatten the object', () => {
+describe("transform/flattenObject", () => {
+  test("Should correctly flatten the object", () => {
     const initialObject = {
       intField: 1,
-      stringField: 'hello',
+      stringField: "hello",
       objectField: {
-        stringSubField: 'world',
+        stringSubField: "world",
         listSubField: [
           {
             subObjectField1: 1,
@@ -21,12 +21,12 @@ describe('transform/flattenObject', () => {
     };
     const expectedOutput = {
       intField: 1,
-      stringField: 'hello',
-      'objectField[stringSubField]': 'world',
-      'objectField[listSubField][0][subObjectField1]': 1,
-      'objectField[listSubField][0][subObjectField2]': 2,
-      'objectField[listSubField][1][subObjectField1]': 3,
-      'objectField[listSubField][1][subObjectField2]': 4,
+      stringField: "hello",
+      "objectField[stringSubField]": "world",
+      "objectField[listSubField][0][subObjectField1]": 1,
+      "objectField[listSubField][0][subObjectField2]": 2,
+      "objectField[listSubField][1][subObjectField1]": 3,
+      "objectField[listSubField][1][subObjectField2]": 4,
     };
     expect(flattenObject(initialObject)).toEqual(expectedOutput);
   });

@@ -1,13 +1,13 @@
-import isObject from './isObject';
+import isObject from "./isObject";
 
-describe('checks/isObject', () => {
-  test('Should return true for {}', () => {
+describe("checks/isObject", () => {
+  test("Should return true for {}", () => {
     expect(isObject({})).toBe(true);
   });
-  test('Should return true for {} with properties', () => {
+  test("Should return true for {} with properties", () => {
     const testObject = {
-      some: 'property',
-      and: 'another one',
+      some: "property",
+      and: "another one",
     };
     expect(isObject(testObject)).toBe(true);
   });

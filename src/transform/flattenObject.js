@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { isObject } from '../checks';
+import { isObject } from "../checks";
 
 const recursivelySetFlatData = (flatData, currentPath, value) => {
   // We skip undefined value because formData will stringify it as 'undefined'

@@ -1,5 +1,5 @@
 const openBlobInNewTab = (blob, fileName, type) => {
-  if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+  if (window.navigator?.msSaveOrOpenBlob) {
     window.navigator.msSaveOrOpenBlob(blob, fileName);
   } else {
     const file = new File([blob], fileName, { type });

@@ -1,14 +1,14 @@
-import deepCopy from './deepCopy';
+import deepCopy from "./deepCopy";
 
-describe('transform/deepCopy', () => {
-  test('Should copy all values into new references', () => {
+describe("transform/deepCopy", () => {
+  test("Should copy all values into new references", () => {
     const item = {
-      string: 'string',
+      string: "string",
       number: 1,
       array: [1, 2],
       set: new Set([1, 2]),
       map: new Map([[1, 2]]),
-      object: { key: 'value' },
+      object: { key: "value" },
     };
     const itemCopy = deepCopy(item);
     expect(itemCopy).toEqual(item);

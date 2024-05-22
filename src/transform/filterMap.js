@@ -13,7 +13,7 @@ const filterMap = (arr, callbackFn) =>
       acc.push(newValue);
       return acc;
     }
-    throw Error('callbackFn must return `false` or `[true, newValue]`');
+    throw Error("callbackFn must return `false` or `[true, newValue]`");
   }, []);
 
 export default filterMap;

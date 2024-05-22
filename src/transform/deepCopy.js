@@ -1,5 +1,5 @@
 /* eslint-disable guard-for-in */
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
 const cloneDayjsObject = (obj) => obj.clone();
 
@@ -25,7 +25,7 @@ const cloneArrayOrObject = (obj) => {
 };
 
 function deepCopy(obj) {
-  if (typeof obj !== 'object' || obj === null) {
+  if (typeof obj !== "object" || obj === null) {
     return obj;
   }
   if (obj instanceof dayjs) return cloneDayjsObject(obj);

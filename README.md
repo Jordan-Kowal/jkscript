@@ -12,10 +12,13 @@ Personal library with ES6 JavaScript utilities
 - `requests`: Utilities for performing HTTP requests
 - `transforms`: String and object transformations
 
-## Pre-commit hooks
+## Using git hooks
 
-The project uses `pre-commit` hooks to keep a consistent file structure.
-As such, if you want to make some changes while using the pre-commit hooks:
+Git hooks are set in the [.githooks](.githooks) folder
+_(as `.git/hooks` is not tracked in `.git`)_
 
-- Install pre-commit: `pip install pre-commit`
-- Setup pre-commit by running `pre-commit install`
+Run the following command to tell `git` to look for hooks in this folder:
+
+```shell
+git config core.hooksPath .githooks
+```

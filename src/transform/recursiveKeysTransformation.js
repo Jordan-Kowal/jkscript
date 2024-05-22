@@ -1,6 +1,6 @@
-import { isObject } from '../checks';
-import toCamelCase from './toCamelCase';
-import toSnakeCase from './toSnakeCase';
+import { isObject } from "../checks";
+import toCamelCase from "./toCamelCase";
+import toSnakeCase from "./toSnakeCase";
 
 export const recursiveKeysTransformation = (obj, transformFunc) => {
   if (isObject(obj)) {
@@ -8,7 +8,7 @@ export const recursiveKeysTransformation = (obj, transformFunc) => {
     Object.keys(obj).forEach((key) => {
       n[transformFunc(key)] = recursiveKeysTransformation(
         obj[key],
-        transformFunc
+        transformFunc,
       );
     });
     return n;

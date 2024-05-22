@@ -1,6 +1,6 @@
 const scrollIntoView = (
   cssSelector,
-  options = { behavior: 'smooth', block: 'start', inline: 'nearest' }
+  options = { behavior: "smooth", block: "start", inline: "nearest" },
 ) => {
   const element = document.querySelector(cssSelector);
   if (element) {

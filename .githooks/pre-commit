@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+
+echo "---------- Git hook: pre-commit ----------"
+
+# Biome (lint and format)
+echo ">>> [1/1] Running Biome"
+(cd frontend && yarn biome:check)
+
+echo "------------------------------------------"

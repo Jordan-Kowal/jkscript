@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.0] - 2024-05-22
+
+- Removed `prettier` and `eslint` from the project, and replaced them with `biome`
+- Removed `pre-commit` and setup a git hook with `biome` instead
+- Updated CI/CD QA to run `biome` and `jest` tests
+
 ## [3.1.1] - 2024-04-14
 
 - Fixed `requests` functions not accessible from the main index

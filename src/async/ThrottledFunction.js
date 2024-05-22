@@ -1,4 +1,4 @@
-import DebouncedFunction from './DebouncedFunction';
+import DebouncedFunction from "./DebouncedFunction";
 
 export default class ThrottledFunction extends DebouncedFunction {
   run() {

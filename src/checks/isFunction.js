@@ -1,3 +1,3 @@
 const isFunction = (functionToCheck) =>
-  !!functionToCheck && typeof functionToCheck === 'function';
+  !!functionToCheck && typeof functionToCheck === "function";
 export default isFunction;
