@@ -8,7 +8,7 @@ echo ">>> [1/2] Running Biome"
 yarn biome:check
 
 # Typechecking
-echo ">>> [2/2] Running Typechecking"
-yarn typecheck
+echo ">>> [2/2] Compiling Typescript"
+yarn tsc
 
 echo "------------------------------------------"

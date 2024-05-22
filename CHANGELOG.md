@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.2.1] - 2024-05-22
+
+- Fixed files no longer being included in the built package
+
 ## [3.2.0] - 2024-05-22
 
 - **Migrated to typescript**
