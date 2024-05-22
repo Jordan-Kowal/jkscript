@@ -9,6 +9,6 @@ yarn biome:check
 
 # Typechecking
 echo ">>> [2/2] Running Typechecking"
-yarn tsc
+yarn typecheck
 
 echo "------------------------------------------"

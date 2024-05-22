@@ -23,7 +23,7 @@
     "biome:check:apply-unsafe": "biome check --apply-unsafe ./src",
     "build": "babel src -d dist",
     "test": "jest",
-    "tsc": "tsc"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@babel/cli": "7.24.5",

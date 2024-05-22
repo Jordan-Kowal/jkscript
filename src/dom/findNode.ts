@@ -1,4 +1,4 @@
-import { sleep } from "@/async";
+import { sleep } from "../async";
 
 const SLEEP_TIME_MS: number = 50;
 
