@@ -44,7 +44,7 @@ jobs:
           path: |
             ~/.yarn
             ./node_modules
-          key: yarn-${{ hashFiles('./frontend/yarn.lock') }}
+          key: yarn-${{ hashFiles('./yarn.lock') }}
 
       - name: Run biome
         run: yarn biome:check
@@ -62,7 +62,7 @@ jobs:
           path: |
             ~/.yarn
             ./node_modules
-          key: yarn-${{ hashFiles('./frontend/yarn.lock') }}
+          key: yarn-${{ hashFiles('./yarn.lock') }}
 
       - name: Run tsc
         run: yarn tsc
