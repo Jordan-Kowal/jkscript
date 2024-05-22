@@ -2,6 +2,7 @@
 
 ## [3.2.0] - 2024-05-22
 
+- **Migrated to typescript**
 - Removed `prettier` and `eslint` from the project, and replaced them with `biome`
 - Removed `pre-commit` and setup a git hook with `biome` instead
 - Updated CI/CD QA to run `biome` and `jest` tests
