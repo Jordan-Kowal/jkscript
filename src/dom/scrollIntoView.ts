@@ -7,7 +7,7 @@ type Options = {
 const scrollIntoView = (
   cssSelector: string,
   options: Options = { behavior: "smooth", block: "start", inline: "nearest" },
-): void => {
+) => {
   const element = document.querySelector(cssSelector);
   if (element) {
     element.scrollIntoView(options);

@@ -4,17 +4,23 @@ describe("transform/filterMap", () => {
   const testArray = [1, "two", 3, "four", "five"];
 
   test("Should crash if no callback function", () => {
-    const identicalArray = filterMap([...testArray], (value) => [true, value]);
+    const identicalArray = filterMap(
+      [...testArray],
+      (value: string | number) => [true, value],
+    );
     expect(identicalArray).toEqual(testArray);
   });
 
   test("Should correctly filter and map an array", () => {
-    const filteredArray = filterMap([...testArray], (value, index) => {
-      if (index % 2) {
-        return [true, value];
-      }
-      return false;
-    });
+    const filteredArray = filterMap(
+      [...testArray],
+      (value: string | number, index: number) => {
+        if (index % 2) {
+          return [true, value];
+        }
+        return false;
+      },
+    );
     expect(filteredArray).toEqual(["two", "four"]);
   });
 

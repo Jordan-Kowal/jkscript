@@ -1,4 +1,3 @@
-const isFunction = (obj: unknown): boolean =>
-  !!obj && typeof obj === "function";
+const isFunction = (obj: any): boolean => !!obj && typeof obj === "function";
 
 export default isFunction;

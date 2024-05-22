@@ -1,6 +1,10 @@
 import { isObject } from "../checks";
 
-const recursivelySetFlatData = (flatData, currentPath, value) => {
+const recursivelySetFlatData = (
+  flatData: Record<any, any>,
+  currentPath: string,
+  value: any,
+) => {
   // We skip undefined value because formData will stringify it as 'undefined'
   if (value === undefined) return;
   // File: Set value
@@ -26,7 +30,7 @@ const recursivelySetFlatData = (flatData, currentPath, value) => {
   flatData[currentPath] = value;
 };
 
-const flattenObject = (data) => {
+const flattenObject = (data: Record<any, any>): Record<any, any> => {
   const flatData = {};
   Object.keys(data).forEach((key) => {
     recursivelySetFlatData(flatData, key, data[key]);

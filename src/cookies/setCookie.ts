@@ -4,7 +4,7 @@ type SetCookieProps = {
   expirationDays?: number;
 };
 
-const setCookie = ({ name, value, expirationDays }: SetCookieProps): void => {
+const setCookie = ({ name, value, expirationDays }: SetCookieProps) => {
   let expires = "";
   if (expirationDays) {
     const date = new Date();

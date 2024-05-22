@@ -2,11 +2,18 @@ import { isObject } from "../checks";
 import toCamelCase from "./toCamelCase";
 import toSnakeCase from "./toSnakeCase";
 
-export const recursiveKeysTransformation = (obj, transformFunc) => {
+type ObjectOrArray = Record<any, any> | Array<any>;
+
+export const recursiveKeysTransformation = (
+  obj: ObjectOrArray,
+  transformFunc: CallableFunction,
+): ObjectOrArray => {
   if (isObject(obj)) {
     const n = {};
     Object.keys(obj).forEach((key) => {
+      // @ts-ignore
       n[transformFunc(key)] = recursiveKeysTransformation(
+        // @ts-ignore
         obj[key],
         transformFunc,
       );
@@ -19,8 +26,8 @@ export const recursiveKeysTransformation = (obj, transformFunc) => {
   return obj;
 };
 
-export const keysToCamel = (obj) =>
+export const keysToCamel = (obj: ObjectOrArray): ObjectOrArray =>
   recursiveKeysTransformation(obj, toCamelCase);
 
-export const keysToSnake = (obj) =>
+export const keysToSnake = (obj: ObjectOrArray): ObjectOrArray =>
   recursiveKeysTransformation(obj, toSnakeCase);

@@ -1,7 +1,7 @@
 export default class DebouncedFunction {
   func: CallableFunction;
   delay: number;
-  result: unknown;
+  result: any;
   timeout: NodeJS.Timeout | undefined;
   constructor(func: CallableFunction, delay: number, startNow = false) {
     this.func = func;

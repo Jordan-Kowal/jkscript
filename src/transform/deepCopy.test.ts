@@ -1,5 +1,14 @@
 import deepCopy from "./deepCopy";
 
+type Items = {
+  string: string;
+  number: number;
+  array: number[];
+  set: Set<number>;
+  map: Map<number, number>;
+  object: Record<string, string>;
+};
+
 describe("transform/deepCopy", () => {
   test("Should copy all values into new references", () => {
     const item = {
@@ -10,7 +19,7 @@ describe("transform/deepCopy", () => {
       map: new Map([[1, 2]]),
       object: { key: "value" },
     };
-    const itemCopy = deepCopy(item);
+    const itemCopy = deepCopy(item) as Items;
     expect(itemCopy).toEqual(item);
     expect(itemCopy).not.toBe(item);
     expect(itemCopy.string).toBe(item.string);

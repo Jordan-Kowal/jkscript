@@ -4,7 +4,7 @@
  *    false: to discard the element
  *    [true, newValue]: to keep and update the value
  */
-const filterMap = (arr, callbackFn) =>
+const filterMap = (arr: Array<any>, callbackFn: CallableFunction) =>
   arr.reduce((acc, value, index, array) => {
     const result = callbackFn(value, index, array);
     if (result === false) return acc;

@@ -13,6 +13,9 @@
       "recommended": true,
       "complexity": {
         "noForEach": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
       }
     }
   }
