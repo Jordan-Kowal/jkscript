@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import toCamelCase from "./toCamelCase";
 
 describe("transform/toCamelCase", () => {

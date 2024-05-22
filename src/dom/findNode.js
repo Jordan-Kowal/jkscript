@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 import { sleep } from "../async";
 
 const SLEEP_TIME_MS = 50;

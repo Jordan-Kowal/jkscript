@@ -1,4 +1,10 @@
-const setCookie = ({ name, value, expirationDays }) => {
+type SetCookieProps = {
+  name: string;
+  value: string;
+  expirationDays?: number;
+};
+
+const setCookie = ({ name, value, expirationDays }: SetCookieProps): void => {
   let expires = "";
   if (expirationDays) {
     const date = new Date();

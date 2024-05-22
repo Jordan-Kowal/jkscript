@@ -4,7 +4,11 @@ set -eu
 echo "---------- Git hook: pre-commit ----------"
 
 # Biome (lint and format)
-echo ">>> [1/1] Running Biome"
-(cd frontend && yarn biome:check)
+echo ">>> [1/2] Running Biome"
+yarn biome:check
+
+# Typechecking
+echo ">>> [2/2] Running Typechecking"
+yarn tsc
 
 echo "------------------------------------------"

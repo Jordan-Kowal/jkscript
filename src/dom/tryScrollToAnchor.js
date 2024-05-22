@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop, no-param-reassign */
 import { sleep } from "../async";
 
 const tryScrollToAnchor = async (hash, timeout = 1000, delay = 100) => {

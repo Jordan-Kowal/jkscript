@@ -12,19 +12,9 @@
     "url": "https://github.com/Jordan-Kowal/jkscript/issues"
   },
   "description": "Personal library with ES6 JavaScript utilities",
-  "keywords": [
-    "es6",
-    "javascript",
-    "js",
-    "utilities"
-  ],
+  "keywords": ["es6", "javascript", "js", "utilities"],
   "main": "dist/index.js",
-  "files": [
-    "dist/",
-    "CHANGELOG.md",
-    "LICENSE.md",
-    "README.md"
-  ],
+  "files": ["dist/", "CHANGELOG.md", "LICENSE.md", "README.md"],
   "scripts": {
     "biome:format": "biome format ./src",
     "biome:lint": "biome lint ./src",
@@ -32,7 +22,8 @@
     "biome:check:apply": "biome check --apply ./src",
     "biome:check:apply-unsafe": "biome check --apply-unsafe ./src",
     "build": "babel src -d dist",
-    "test": "jest"
+    "test": "jest",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@babel/cli": "7.24.5",
@@ -42,6 +33,7 @@
     "dayjs": "1.11.11"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "7.24.1",
     "@biomejs/biome": "1.7.3",
     "@testing-library/jest-dom": "6.4.5",
     "@testing-library/user-event": "14.5.2",

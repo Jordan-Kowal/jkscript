@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { isObject } from "../checks";
 
 const recursivelySetFlatData = (flatData, currentPath, value) => {

@@ -1,4 +1,3 @@
-/* eslint-disable guard-for-in */
 import dayjs from "dayjs";
 
 const cloneDayjsObject = (obj) => obj.clone();

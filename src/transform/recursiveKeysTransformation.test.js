@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { keysToCamel, keysToSnake } from "./recursiveKeysTransformation";
 
 describe("transform/keysToSnake", () => {
