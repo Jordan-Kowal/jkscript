@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.2.3] - 2024-09-23
+
+- Updated deps
+
 ## [3.2.2] - 2024-05-22
 
 - Fixed build to correctly work with `.ts` files
