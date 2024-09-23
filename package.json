@@ -27,11 +27,11 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@babel/cli": "7.24.5",
-    "@babel/core": "7.24.5",
-    "@babel/preset-env": "7.24.5",
-    "@babel/runtime": "7.24.5",
-    "dayjs": "1.11.11"
+    "@babel/cli": "7.25.6",
+    "@babel/core": "7.25.2",
+    "@babel/preset-env": "7.25.4",
+    "@babel/runtime": "7.25.6",
+    "dayjs": "1.11.13"
   },
   "devDependencies": {
     "@babel/preset-typescript": "7.24.1",
