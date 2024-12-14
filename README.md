@@ -22,3 +22,5 @@ Run the following command to tell `git` to look for hooks in this folder:
 ```shell
 git config core.hooksPath .githooks
 ```
+
+![Alt](https://repobeats.axiom.co/api/embed/6f198c28e87ff48b85c369119abf9c8ef00e5c36.svg "Repobeats analytics image")
