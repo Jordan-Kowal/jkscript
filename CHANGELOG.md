@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.2.4] - 2024-12-31
+
+- Updated deps
+
 ## [3.2.3] - 2024-09-23
 
 - Updated deps
