@@ -11,6 +11,7 @@ Personal library with ES6 JavaScript utilities
 - `maths`: Math utilities
 - `requests`: Utilities for performing HTTP requests
 - `transforms`: String and object transformations
+- `types`: Useful and re-usable types
 
 ## Using git hooks
 
