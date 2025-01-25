@@ -16,7 +16,7 @@ export {
   tryScrollToAnchor,
 } from "./dom";
 export { getRandomInt, round } from "./maths";
-export { setParam, appendListParams, setBoolParam } from "./requests";
+export { appendListParams, setBoolParam, setParam } from "./requests";
 export {
   deepCopy,
   filterMap,
@@ -28,3 +28,10 @@ export {
   toCamelCase,
   toSnakeCase,
 } from "./transform";
+export type {
+  CamelToSnakeCase,
+  KeysToCamelCase,
+  KeysToSnakeCase,
+  SnakeToCamelCase,
+  ValueOf,
+} from "./types";

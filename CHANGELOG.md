@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.3.0] - 2025-01-25
+
+- Added new `types` utils with types for `SnakeToCamelCase, KeysToCamelCase, CamelToSnakeCase, KeysToSnakeCase, ValueOf`
+- Updated deps
+
 ## [3.2.4] - 2024-12-31
 
 - Updated deps
