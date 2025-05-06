@@ -37,14 +37,14 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@babel/cli": "7.27.0",
-    "@babel/core": "7.26.10",
-    "@babel/preset-env": "7.26.9",
-    "@babel/runtime": "7.27.0",
+    "@babel/cli": "7.27.1",
+    "@babel/core": "7.27.1",
+    "@babel/preset-env": "7.27.1",
+    "@babel/runtime": "7.27.1",
     "dayjs": "1.11.13"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "7.27.0",
+    "@babel/preset-typescript": "7.27.1",
     "@biomejs/biome": "1.9.4",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/user-event": "14.6.1",
