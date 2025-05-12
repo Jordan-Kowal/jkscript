@@ -37,9 +37,9 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@babel/cli": "7.27.1",
+    "@babel/cli": "7.27.2",
     "@babel/core": "7.27.1",
-    "@babel/preset-env": "7.27.1",
+    "@babel/preset-env": "7.27.2",
     "@babel/runtime": "7.27.1",
     "dayjs": "1.11.13"
   },
