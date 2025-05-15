@@ -1,5 +1,9 @@
 # Changelog
 
+## TBD
+
+- Added `CODEOWNERS` file
+
 ## [3.3.0] - 2025-01-25
 
 - Added new `types` utils with types for `SnakeToCamelCase, KeysToCamelCase, CamelToSnakeCase, KeysToSnakeCase, ValueOf`
