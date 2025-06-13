@@ -40,7 +40,7 @@
     "@babel/cli": "7.27.2",
     "@babel/core": "7.27.4",
     "@babel/preset-env": "7.27.2",
-    "@babel/runtime": "7.27.4",
+    "@babel/runtime": "7.27.6",
     "dayjs": "1.11.13"
   },
   "devDependencies": {
