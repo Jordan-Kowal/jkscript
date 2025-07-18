@@ -1,4 +1,4 @@
-export { DebouncedFunction, ThrottledFunction, sleep } from "./async";
+export { DebouncedFunction, sleep, ThrottledFunction } from "./async";
 export {
   isFunction,
   isMissingOrEmptyObject,

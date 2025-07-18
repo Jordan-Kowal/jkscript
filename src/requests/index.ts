@@ -1,1 +1,1 @@
-export { setBoolParam, setParam, appendListParams } from "./utils";
+export { appendListParams, setBoolParam, setParam } from "./utils";

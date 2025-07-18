@@ -3,6 +3,7 @@
 ## TBD
 
 - Added `CODEOWNERS` file
+- Upgraded biome to v2 and updated config
 
 ## [3.3.0] - 2025-01-25
 

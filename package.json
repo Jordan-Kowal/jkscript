@@ -27,11 +27,8 @@
     "README.md"
   ],
   "scripts": {
-    "biome:format": "biome format ./src",
-    "biome:lint": "biome lint ./src",
     "biome:check": "biome check ./src",
-    "biome:check:apply": "biome check --apply ./src",
-    "biome:check:apply-unsafe": "biome check --apply-unsafe ./src",
+    "biome:check:fix": "biome check ./src --write --unsafe",
     "build": "tsc --declaration && babel --extensions .ts,.tsx,js,jsx src -d dist",
     "test": "jest",
     "tsc": "tsc"
@@ -45,7 +42,7 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "7.27.1",
-    "@biomejs/biome": "2.1.1",
+    "@biomejs/biome": "2.1.2",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/user-event": "14.6.1",
     "@types/jest": "^30.0.0",
