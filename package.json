@@ -37,18 +37,18 @@
     "@babel/cli": "7.28.0",
     "@babel/core": "7.28.0",
     "@babel/preset-env": "7.28.0",
-    "@babel/runtime": "7.27.6",
+    "@babel/runtime": "7.28.2",
     "dayjs": "1.11.13"
   },
   "devDependencies": {
     "@babel/preset-typescript": "7.27.1",
     "@biomejs/biome": "2.1.2",
-    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/jest-dom": "6.6.4",
     "@testing-library/user-event": "14.6.1",
     "@types/jest": "^30.0.0",
     "circular-dependency-plugin": "5.2.2",
-    "jest": "30.0.4",
-    "jest-environment-jsdom": "30.0.4",
+    "jest": "30.0.5",
+    "jest-environment-jsdom": "30.0.5",
     "ts-node": "10.9.2",
     "typescript": "5.8.3"
   }
