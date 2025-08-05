@@ -4,6 +4,8 @@
 
 - Added `CODEOWNERS` file
 - Upgraded biome to v2 and updated config
+- Changed deps update frequency to monthly
+- Updated deps
 
 ## [3.3.0] - 2025-01-25
 
